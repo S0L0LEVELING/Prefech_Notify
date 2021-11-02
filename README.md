@@ -7,6 +7,8 @@
 ![Contributors](https://img.shields.io/github/contributors/Prefech/Prefech_Notify.png)
 [![Discord](https://discordapp.com/api/guilds/721339695199682611/widget.png)](https://discord.gg/prefech)
 
+![Image](https://prefech.com/i/02P11n2021p678.png)
+
 ## Requirements
 - FXServer
 
