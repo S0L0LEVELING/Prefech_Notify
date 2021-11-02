@@ -20,10 +20,10 @@ $notify = function (args) {
     let $notification = $(
       `<div class="notification unfold ${args.position}" style="border-left: 3px solid ${args["color"]}54;" id="${id}">
           <div font-size: 28px class="type" style="color: ${args["color"]};">
-              <i class="${args['icon']}"></i>
+              <i class="${args['icon']} fa-3x"></i>
           </div>
           <div class="message">
-            <small style="font-size: 12px;">${args['title']}</small>
+            <h3>${args['title']}<br></h3>
             ${args["message"]}
           </div>
       </div>`
@@ -52,7 +52,7 @@ $(function () {
   window.addEventListener("message", function (event) {
     if (event.data.createNew === true) {
       $notify({
-        icon: event.data.data.type,
+        icon: event.data.data.icon,
         message: event.data.data.message,
         title: event.data.data.title,
         timeout: event.data.data.timeout,
